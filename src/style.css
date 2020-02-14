@@ -1,0 +1,118 @@
+@import "~normalize.css";
+@import "milligram.min.css";
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+.btn {
+  margin: 0;
+}
+.btn.btn-warning{
+  background-color: red;
+}
+.btn-submit{
+  margin-top: 10px;
+}
+#header {
+  background-color: bisque;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tabs {
+  display: flex;
+}
+
+.tab {
+  color: black;
+  text-decoration: none;  
+  font-size: 18px;
+  padding-right: 15px;
+  border-bottom: 1px solid #000;
+}
+.tab:hover{
+  text-decoration: none;
+  color: rgba(0,0,0, .2);
+}
+.tab.active {
+  border-top: 3px solid red;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 0;
+}
+.panel {
+  height: 300px;
+  max-width: 415px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(224,224,224,0.8);
+  background-color: #fafafa;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.panel-body {
+  background-color: mistyrose;
+  height: 100%;
+  width: 100%;
+  padding: 15px 15px;
+  border-radius: 5px;
+}
+.panel-head{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+}
+.panel-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 15px 0 15px 15px;
+}
+.tag{
+  width: 80px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: rgba(128, 128, 128, 0.19);
+}
+.tag.tag-news{
+  background-color: rgb(135, 228, 135);
+}
+.tag.tag-note{
+  background-color: rgba(20, 49, 241, 0.197);
+}
+/* .form-control{
+  margin-bottom: 50px;
+  border: none;
+} */
+.form-control textarea {
+  resize: none;
+}
+.hide{
+  display: none !important;
+}
+.error{
+  color:indianred;
+  font-size: 10px;
+  margin-bottom: 10px;
+}

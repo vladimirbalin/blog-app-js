@@ -24,6 +24,14 @@ class ApiService {
       console.error(e);
     }
   }
+  async fetchPostById(id) {
+    try {
+      const response = await fetch(this.url + `/posts/${id}.json`);
+      return response.json();
+    } catch (e) {
+      console.error(e);
+    }
+  }
 }
 
 export const apiService = new ApiService('https://form-classes-js.firebaseio.com');

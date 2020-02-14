@@ -38,7 +38,7 @@ function renderPosts(fbData) {
     return `
         <div class="panel">
           <div class="panel-head">
-            <p class="panel-title">${el.title}</p>
+            <p class="panel-title bold">${el.title}</p>
             ${tag}
           </div>
           <div class="panel-body">

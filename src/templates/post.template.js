@@ -3,7 +3,7 @@ export function renderPosts(fbData, buttonOpt = true) {
     const tag = fbData.type === 'news' ? `<div class="tag tag-news">Новость</div>`
       : `<div class="tag tag-note">Заметка</div>`;
     const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-    const candidate = favorites.find(f => f.id === fbData.id) && buttonOpt;
+    const candidate = favorites.find(f => f.id === fbData.id);
     const button = candidate ?
       `<button data-id="${fbData.id}" data-title="${fbData.title}" class="btn btn-warning">Удалить из избранного</button>` :
       `<button data-id="${fbData.id}" data-title="${fbData.title}" class="btn">Добавить в избранное</button>`
